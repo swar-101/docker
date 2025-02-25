@@ -1,0 +1,57 @@
+4 microservices
+
+	product-service		Spring Boot
+	user-service		Node.js
+	payment-service		Golang
+	order-service 		Spring Boot 
+
+
+Docker commands
+
+	docker build -t <image-name>:<tag> <build-context>
+		e.g. docker build -t my-app:latest .
+
+	docker run -d -p <host-port>:<container-port> --name <container-name> <image-name>:<tag>
+
+	`-d` - runs the container in detachted mode
+	`-p <host-port>:<container-port>` - maps a port on your host to the port on the container
+	`--name` - a recognizable name for your container 
+	`<image-name>:<tag>` - the image we want to run as a container 
+
+		e.g. docker run -d -p 8000:8000 --name my-app-container my-app:latest 
+
+Presentation overview
+
+Brief introduction to microservices architecture
+	+ diagrammatic representation
+	+ project architecture 
+	+ link to resources
+	
+
+Issues building microservices locally
+	+ incompatibility 
+	+ and so on..
+	
+Why Docker?
+	+ What issues does Docker solve?
+	+ How does Docker solve these issues?
+	
+	
+Docker things
+	Docker image
+	Docker container 
+	Docker Scout
+	Docker build
+	Docker run
+	Docker compose
+	Using Docker Desktop
+	Best Practices
+	
+Deploying microservices
+	Single container deployment
+	Multi container deployment
+	
+
+	
+	
+	
